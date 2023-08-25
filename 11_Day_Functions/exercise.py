@@ -37,7 +37,7 @@ print(add_all_nums(1, 55, 66))
 # Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32.
 # Write a function which converts °C to °F, convert_celsius_to_fahrenheit.
 def convert_celsius_to_fahrenheit(celsius):
-    if type(celsius)!=int and type(celsius)!=float:
+    if type(celsius) != int and type(celsius) != float:
         return 'not a number'
     else:
         fahrenheit = (celsius * 9 / 5) + 32
@@ -45,8 +45,47 @@ def convert_celsius_to_fahrenheit(celsius):
 
 
 print(convert_celsius_to_fahrenheit(10))
-# Write a function called check-season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+
+
+# Write a function called check_season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+def check_season(month):
+    season = ''
+    if month in (12, 1, 2):
+        season = 'Winter'
+    elif month in (3, 4, 5):
+        season = 'Spring'
+    elif month in (6, 7, 8):
+        season = 'Summer'
+    elif month in (9, 10, 11):
+        season = 'Winter'
+    return season
+
+
+print(check_season(6))
+
+
 # Write a function called calculate_slope which return the slope of a linear equation
-# Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
-# Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
-# Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
+def calculate_slope(angle):
+    k = math.tan(angle)
+    return k
+
+
+print(calculate_slope(80))
+
+
+# Quadratic equation is calculated as follows: ax² + bx + c = 0.
+# Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+def quadratic_equation():
+    pass
+
+
+# Declare a function named print_list.
+# It takes a list as a parameter, and it prints out each element of the list.
+def print_list():
+    pass
+
+
+# Declare a function named reverse_list.
+# It takes an array as a parameter, and it returns the reverse of the array (use loops).
+def reverse_list():
+    pass
